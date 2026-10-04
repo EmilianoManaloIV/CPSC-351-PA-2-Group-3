@@ -1,0 +1,36 @@
+$ ./time ls
+time
+time_pipe
+time_pipe.c
+time_shm
+time_shm.c
+time_shm_output.txt
+Elapsed time: 0.004679 seconds
+
+$ ./time ls -l
+total 80
+-rwxr-xr-x 1 trick trick 16696 Oct  4 14:46 time
+-rwxr-xr-x 1 trick trick 16600 Oct  4 14:46 time_pipe
+-rwxr-xr-x 1 trick trick  4486 Oct  4 14:46 time_pipe.c
+-rwxr-xr-x 1 trick trick 16696 Oct  4 14:46 time_shm
+-rwxr-xr-x 1 trick trick  4262 Oct  4 14:46 time_shm.c
+-rw-r--r-- 1 trick trick   126 Oct  4 14:46 time_shm_output.txt
+Elapsed time: 0.007559 seconds
+
+$ ./time pwd
+/tmp/tmp.CyYEESkmjI
+Elapsed time: 0.006181 seconds
+
+$ ./time sleep 1
+Elapsed time: 1.009243 seconds
+
+$ ./time echo Hello from PA2
+Hello from PA2
+Elapsed time: 0.005070 seconds
+
+$ ./time nonexistent_cmd_xyz
+execvp failed for 'nonexistent_cmd_xyz': No such file or directory
+Elapsed time: 0.082898 seconds
+
+$ ./time
+Usage: ./time <command> [args...]
