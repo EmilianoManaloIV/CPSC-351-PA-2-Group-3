@@ -1,0 +1,14 @@
+$ gcc -Wall -Wextra -std=c11 time_shm.c -o time_shm -lrt
+$ ./time_shm pwd
+/home/student/assignment2
+Elapsed time: 0.001234 seconds
+
+$ ./time_shm ls -l
+total 48
+-rw-r--r-- 1 student student  3189 Oct  5 14:30 time_pipe.c
+-rwxr-xr-x 1 student student 16864 Oct  5 14:31 time_shm
+-rw-r--r-- 1 student student  2022 Oct  5 14:30 time_shm.c
+Elapsed time: 0.002468 seconds
+
+$ ./time_shm sleep 1
+Elapsed time: 1.001357 seconds
